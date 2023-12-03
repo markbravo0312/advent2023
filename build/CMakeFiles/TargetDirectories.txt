@@ -1,5 +1,0 @@
-/home/mark/cpp/advent2023/build/CMakeFiles/aoc1.dir
-/home/mark/cpp/advent2023/build/CMakeFiles/aoc2.dir
-/home/mark/cpp/advent2023/build/CMakeFiles/aoc3.dir
-/home/mark/cpp/advent2023/build/CMakeFiles/edit_cache.dir
-/home/mark/cpp/advent2023/build/CMakeFiles/rebuild_cache.dir
