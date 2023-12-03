@@ -1,4 +1,4 @@
-CMakeFiles/aoc01.dir/01.cpp.o: /home/mark/cpp/advent2023/01.cpp \
+CMakeFiles/aoc1.dir/01.cpp.o: /home/mark/cpp/advent2023/01.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

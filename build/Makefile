@@ -117,24 +117,50 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named aoc01
+# Target rules for targets named aoc1
 
 # Build rule for target.
-aoc01: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aoc01
-.PHONY : aoc01
+aoc1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aoc1
+.PHONY : aoc1
 
 # fast build rule for target.
-aoc01/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc01.dir/build.make CMakeFiles/aoc01.dir/build
-.PHONY : aoc01/fast
+aoc1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/build
+.PHONY : aoc1/fast
+
+#=============================================================================
+# Target rules for targets named aoc2
+
+# Build rule for target.
+aoc2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aoc2
+.PHONY : aoc2
+
+# fast build rule for target.
+aoc2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/build
+.PHONY : aoc2/fast
+
+#=============================================================================
+# Target rules for targets named aoc3
+
+# Build rule for target.
+aoc3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aoc3
+.PHONY : aoc3
+
+# fast build rule for target.
+aoc3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/build
+.PHONY : aoc3/fast
 
 01.o: 01.cpp.o
 .PHONY : 01.o
 
 # target to build an object file
 01.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc01.dir/build.make CMakeFiles/aoc01.dir/01.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/01.cpp.o
 .PHONY : 01.cpp.o
 
 01.i: 01.cpp.i
@@ -142,7 +168,7 @@ aoc01/fast:
 
 # target to preprocess a source file
 01.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc01.dir/build.make CMakeFiles/aoc01.dir/01.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/01.cpp.i
 .PHONY : 01.cpp.i
 
 01.s: 01.cpp.s
@@ -150,8 +176,56 @@ aoc01/fast:
 
 # target to generate assembly for a file
 01.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc01.dir/build.make CMakeFiles/aoc01.dir/01.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/01.cpp.s
 .PHONY : 01.cpp.s
+
+02.o: 02.cpp.o
+.PHONY : 02.o
+
+# target to build an object file
+02.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/02.cpp.o
+.PHONY : 02.cpp.o
+
+02.i: 02.cpp.i
+.PHONY : 02.i
+
+# target to preprocess a source file
+02.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/02.cpp.i
+.PHONY : 02.cpp.i
+
+02.s: 02.cpp.s
+.PHONY : 02.s
+
+# target to generate assembly for a file
+02.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/02.cpp.s
+.PHONY : 02.cpp.s
+
+03.o: 03.cpp.o
+.PHONY : 03.o
+
+# target to build an object file
+03.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/03.cpp.o
+.PHONY : 03.cpp.o
+
+03.i: 03.cpp.i
+.PHONY : 03.i
+
+# target to preprocess a source file
+03.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/03.cpp.i
+.PHONY : 03.cpp.i
+
+03.s: 03.cpp.s
+.PHONY : 03.s
+
+# target to generate assembly for a file
+03.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/03.cpp.s
+.PHONY : 03.cpp.s
 
 # Help Target
 help:
@@ -161,10 +235,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... aoc01"
+	@echo "... aoc1"
+	@echo "... aoc2"
+	@echo "... aoc3"
 	@echo "... 01.o"
 	@echo "... 01.i"
 	@echo "... 01.s"
+	@echo "... 02.o"
+	@echo "... 02.i"
+	@echo "... 02.s"
+	@echo "... 03.o"
+	@echo "... 03.i"
+	@echo "... 03.s"
 .PHONY : help
 
 

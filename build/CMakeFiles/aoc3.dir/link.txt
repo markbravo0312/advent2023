@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/aoc3.dir/03.cpp.o -o aoc3 

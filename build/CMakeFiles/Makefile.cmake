@@ -44,5 +44,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/aoc01.dir/DependInfo.cmake"
+  "CMakeFiles/aoc1.dir/DependInfo.cmake"
+  "CMakeFiles/aoc2.dir/DependInfo.cmake"
+  "CMakeFiles/aoc3.dir/DependInfo.cmake"
   )
