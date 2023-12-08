@@ -5,6 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include <string_view>
+#include <sstream>
 
 
 
@@ -26,7 +27,9 @@ class Parser {
         std::istringstream iss(s);
         std::string item;
         while (std::getline(iss, item, delim)) {
-            *result++ = item;
+            if (!item.empty()) {
+                *result++ = item;
+            }
         }
     }   
 

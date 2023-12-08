@@ -37,21 +37,21 @@ size_t part1(std::vector<std::string> input)
     input.insert(input.begin(), std::string(rows, '.'));
     input.push_back(std::string(rows, '.'));
 
-    for(long long i = 0; i < input.size(); ++i)
+    for(size_t i = 0; i < input.size(); ++i)
     {
         input[i].insert(input[i].begin(), '.');
     }
 
-    for(long long i = 0; i < input.size(); ++i)
+    for(size_t i = 0; i < input.size(); ++i)
     {
         input[i].push_back('.');
     }
 
-    for(long long i = 1; i < input.size() - 1; ++i) {
+    for(size_t i = 1; i < input.size() - 1; ++i) {
         std::string number;
         bool is_part_number = false;
 
-        for(long long j = 1; j < input[i].size() - 1; ++j){
+        for(size_t j = 1; j < input[i].size() - 1; ++j){
             int character = input[i][j];
 
             bool tl = is_symbol(input[i - 1][j - 1]);
@@ -67,7 +67,7 @@ size_t part1(std::vector<std::string> input)
             {
                 number += character;
 
-                if(tl || tc || top_right || ml || mr || bl || bc || br)
+                if(tl || tc || tr || ml || mr || bl || bc || br)
                     is_part_number = true;
             }
             if(!isdigit(character) || j == rows )
@@ -96,25 +96,25 @@ size_t part2 (std::vector<std::string> input) {
     input.insert(input.begin(), std::string(rows, '.'));
     input.push_back(std::string(rows, '.'));
 
-    for(long long i = 0; i < input.size(); ++i) {
+    for(size_t i = 0; i < input.size(); ++i) {
         input[i].insert(input[i].begin(), '.');
     }
 
-    for(long long i = 0; i < input.size(); ++i) {
+    for(size_t i = 0; i < input.size(); ++i) {
         input[i].push_back('.');
     }
     std::set<std::pair<size_t, size_t>> gears;
 
-    std::map<std::pair<size_t, size_t>, std::vector<long long>> gtn;
+    std::map<std::pair<size_t, size_t>, std::vector<size_t>> gtn;
 
-    for(long long i = 1; i < input.size() - 1; ++i) {
+    for(size_t i = 1; i < input.size() - 1; ++i) {
         std::string number;
 
-        for(long long j = 1; j < input[i].size() - 1; ++j) {
+        for(size_t j = 1; j < input[i].size() - 1; ++j) {
             int character = input[i][j];
             if(isdigit(character)) {
                 number += character;
-                get_gear(gears, i, j, input);
+                get_gear(i, j, input, gears);
             }
 
             if(!isdigit(character) || j == rows ) {
