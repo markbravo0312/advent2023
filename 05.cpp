@@ -13,7 +13,7 @@ std::set<bignum> seeds{};
 
 
 
-void solve(int part)
+void part(int part)
 {
   std::set<std::pair<long, long>> cur, keep, next;  
   std::ifstream f("../input.txt");
@@ -79,16 +79,13 @@ void solve(int part)
 }
 
 
-void part2 (const std::vector<std::string>& lines) {
-    
-}
 
 
 int main () {
 
     auto lines = Parser::readLines("../input.txt");
     
-    solve(1);
-    solve(2);
+    part(1);
+    part(2);
 
 }
