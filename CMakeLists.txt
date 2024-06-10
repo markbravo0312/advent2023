@@ -36,3 +36,7 @@ target_compile_features(aoc5 PRIVATE cxx_std_20)
 add_executable(aoc6 06.cpp Parser.h)
 target_link_libraries(aoc6 PRIVATE)
 target_compile_features(aoc6 PRIVATE cxx_std_20)
+
+add_executable(aoc7 07.cpp Parser.h)
+target_link_libraries(aoc7 PRIVATE)
+target_compile_features(aoc7 PRIVATE cxx_std_20)
